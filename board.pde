@@ -7,6 +7,7 @@ final int CELLSIZE = BANSIZE / 8;
 final int STONESIZE = round(CELLSIZE * 0.9);
  
 int[][] ban;
+int teban = KURO;
  
 void setup()
 {

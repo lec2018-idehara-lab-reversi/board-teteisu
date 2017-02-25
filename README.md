@@ -11,3 +11,7 @@
 # 課題
 
 switch 文の case を適切に記述して、盤面に石が表示されるようにしなさい。石の直径は、STONESIZE で定義されていることに注意。
+
+# 参照
+
+https://processing.org/reference/ellipse_.html

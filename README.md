@@ -1,5 +1,3 @@
-# processing-reversi
-
 # 盤面表示
 
 - [ ] processing の最も基本的な関数 setup() と draw() を理解する。

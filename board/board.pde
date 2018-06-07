@@ -5,10 +5,10 @@ final int SOTO = 255;
 final int BANSIZE = 640;
 final int CELLSIZE = BANSIZE / 8;
 final int STONESIZE = round(CELLSIZE * 0.9);
-
+ 
 int[][] ban;
 int teban = KURO;
-
+ 
 void setup()
 {
 //  size(BANSIZE, BANSIZE);
@@ -30,7 +30,7 @@ void setup()
   ban[4][5] = KURO;
   ban[5][4] = KURO;
 }
-
+ 
 void showBan(int[][] b)
 {
   background(0,96,0);
@@ -39,7 +39,7 @@ void showBan(int[][] b)
     line(0,i*CELLSIZE,BANSIZE,i*CELLSIZE);
     line(i*CELLSIZE,0,i*CELLSIZE,BANSIZE);
   }
-
+ 
   for(int y=1; y<=8; y++)
   {
     for(int x=1; x<=8; x++)
@@ -51,14 +51,16 @@ void showBan(int[][] b)
         case AKI:
           break;
         case KURO:
+         ellipse(round(80*x-40), round(80*y-40), 72,72);
           break;
         case SHIRO:
+         ellipse(round(80*x-40), round(80*y-40), 72,72);
           break;
       }
     }
   }
 }
-
+ 
 void draw()
 {
   showBan(ban);
